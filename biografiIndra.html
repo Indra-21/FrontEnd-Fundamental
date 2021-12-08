@@ -25,12 +25,15 @@
         }
         .button {
             background-color:lightskyblue;
+            margin-top: 10px;
+            
         }
         hr {
             border: none;
             height: 3px;
             color:lightsalmon; 
-            background-color:lightsalmon; 
+            background-color:lightsalmon;
+            margin-top:150px; 
         }
         img {
             height: 200px;
@@ -38,6 +41,11 @@
 
         h5 {
             font-size: 35px;
+            text-align: center;
+        }
+        #contact{
+            margin-top:100px;
+            margin-bottom: 70px;
         }
        
         
@@ -47,33 +55,75 @@
 <body>
 
     <div class="jumbotron">
+
+        <ul class="nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skill & MyClass</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
    
             
                 <h4 align="center"><b>My Porto</b>folio</h4>
+               
             
 
        
-        <div class="border border-2">
+        <div class="border border-3">
     
             <div class="jarak">
-        
-                <img src="image/indra.jpg" alt="image error" align="right" border="1">
-                    <div>
-                        <h5>Biografi</h5>
-                        <p> 
-                            Hallo Perkenalkan Nama saya Indra Saputra. Saya asli Padang namun saat ini saya stay di Jakarta.
-                            Saat ini kesibukan saya yaitu sedang mengikuti kelas di Eduwork untuk Fullstack MERN (MongoDb , Express, ReactJs, Next.js)
-                            Harapan saya dalam mengikuti kelas tersebut agar saya bisa mengerti tentang pemograman dengan terstruktur dan di dampingi dengan senior
-                            yang sudah berpengalaman di bidang nya dan supaya bisa bekerja sebagai programmer yg baik dan handal di bidang nya
-                            Karna dari pengalaman saya belajar sendiri setelah menguasai materi A namun bingung mau ke mana lagi dan step nya bagaimana 
-                            dan disaat stuck pun harus pusing berhari2 dan ngelamun mikirin alur nya 
-                            saya sangat berharap setelah kelas ini bisa langsung bekerja di lapangan agar mendapatkan pengalaman dan ilmu yg lebih dalam lapangan
-                            dan bisa jadi pengajar buat yang ingin belajar pemograman .
-                        </p>
-                    </div>
+                <div class="container mb-500px" id="home" >
+                    
+                        <div>
+                            <h4 class="text-left">Biografi</h4>
+                            
+                        </div>
+                        <div class="card mb-100">
+                        <div class="card-body">
+                            <img src="image/indra.jpg" alt="image error" align="right" border="1">
+                            <p> 
+                                Hallo Perkenalkan Nama saya Indra Saputra. Saya asli Padang namun saat ini saya stay di Jakarta.
+                                Saat ini kesibukan saya yaitu sedang mengikuti kelas di Eduwork untuk Fullstack MERN (MongoDb , Express, ReactJs, Next.js)
+                                Harapan saya dalam mengikuti kelas tersebut agar saya bisa mengerti tentang pemograman dengan terstruktur dan di dampingi dengan senior
+                                yang sudah berpengalaman di bidang nya dan supaya bisa bekerja sebagai programmer yg baik dan handal di bidang nya
+                                Karna dari pengalaman saya belajar sendiri setelah menguasai materi A namun bingung mau ke mana lagi dan step nya bagaimana 
+                                dan disaat stuck pun harus pusing berhari2 dan ngelamun mikirin alur nya 
+                                saya sangat berharap setelah kelas ini bisa langsung bekerja di lapangan agar mendapatkan pengalaman dan ilmu yg lebih dalam lapangan
+                                dan bisa jadi pengajar buat yang ingin belajar pemograman .
+                            </p><br><br>
+                            <table class="table table-hover shadow-sm" style="width: 500px;">
+                                <thead>
+                                    <tr>
+                                        <th>Pendidikan</th>
+                                        <th>Tahun Lulus</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SDN 53 Padang</td>
+                                        <td>2003-2009</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SMPN 15 Padang</td>
+                                        <td>2009-2012</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SMK Labor Padang</td>
+                                        <td>2012-2015</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                </div>
                 <hr>
-        </div>
-                    <div class="jarak">
+                
+                <div class="container mt-200px" id="skill" >
                     <div>
                         <h5>Skill</h5>
                         <ul>
@@ -127,29 +177,35 @@
                             </tbody>
                         </table>
                     </div>
-                    <div>
+                </div>
+                <div class="container mt-200" id="contact" >
                         <form action="" method="post">
                             <h5>Contact Me</h5>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+                            <!-- <div class="card mx-auto" style="width: 500px;">
+                                <div class="card-body"> -->
+                                    <div class="mb-3 mx-auto" style="width: 500px;">
+                                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+                                    </div>
+                                    <div class="mb-3 mx-auto" style="width: 500px;">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis Pesan..."></textarea>
+                                    </div>
+                                <!-- </div>
+                            </div> -->
+                            <div class="mb-3 mx-auto" style="width: 500px;">
+                                <button class="btn btn-warning border border-dark btn-sm shadow-sm text-white px-3 py-2" >Submit</button>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tulis Pesan..."></textarea>
-                            </div>
-                            <button type="button" class="button">Submit</button>
                         </form>
-                    </div>
-                    
-            </div>
+                </div>   
+        </div>
                     <div class="card-footer">
-                            <p><center>
-                                Copyright &copy; 2021 Indra Saputra
-                                </center>
+                            <p class="text-center " >
+                               <b> Copyright &copy; 2021 Indra Saputra </b>
+                                
                             </p>
                     </div>
-                </div>
+        </div>
         
     </div>
    
